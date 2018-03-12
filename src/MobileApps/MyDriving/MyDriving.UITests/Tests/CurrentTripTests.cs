@@ -3,6 +3,7 @@
 
 using Xamarin.UITest;
 using NUnit.Framework;
+using System.Linq;
 
 namespace MyDriving.UITests
 {

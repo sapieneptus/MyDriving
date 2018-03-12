@@ -25,7 +25,7 @@ namespace MyDriving.UITests
             }
             if (OniOS)
             {
-                SettingsTab = x => x.Id("tab_Settings.png");
+                SettingsTab = x => x.Id("tab_Settings.png"); // settings Button
                 FuelConsumptionField = x => x.Class("ProfileStatCell").Descendant().Marked("Fuel Consumption").Sibling();
                 DistanceField = x => x.Class("ProfileStatCell").Descendant().Marked("Total Distance").Sibling();
             }

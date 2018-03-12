@@ -46,6 +46,9 @@ namespace MyDriving.UITests
 
 				if (App.Query("Dismiss").Any())
 					App.Tap("Dismiss");
+
+                new LoginPage()
+                    .SkipAuthentication();
             }
         }
 

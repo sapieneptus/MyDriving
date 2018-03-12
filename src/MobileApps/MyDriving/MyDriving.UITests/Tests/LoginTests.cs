@@ -15,11 +15,6 @@ namespace MyDriving.UITests
         [Test]
         public void SkipAuthenticationTest()
         {
-            ClearKeychain();
-
-            new LoginPage()
-                .SkipAuthentication();
-
             new CurrentTripPage()
                 .AssertOnPage();
         }

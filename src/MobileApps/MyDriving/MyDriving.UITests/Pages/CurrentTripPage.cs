@@ -38,6 +38,9 @@ namespace MyDriving.UITests
 
             System.Threading.Thread.Sleep(2500);
 
+            if (App.Query("Geolocation Disabled").Any() && App.Query("OK").Any())
+                App.Tap("OK");
+
             if (!App.Query(UseSimulatorButton).Any())
             {
                 App.Tap(RecordingButton);

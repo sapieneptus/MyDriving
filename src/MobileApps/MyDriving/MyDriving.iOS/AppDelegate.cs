@@ -75,9 +75,9 @@ namespace MyDriving.iOS
                 tabBarController.SelectedIndex = 1;
             }
 
-#if XTC
+//#if XTC
             Xamarin.Calabash.Start();
-#endif
+//#endif
 
             return true;
         }

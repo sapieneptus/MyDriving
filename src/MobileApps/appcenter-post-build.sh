@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-if [ "$MOBILECENTER_BRANCH" == "chfuen/demo" ];
+if [ "$MOBILECENTER_BRANCH" == "chfuen%2fdemo" ];
 then
     msbuild /p:Configuration=Debug $MOBILECENTER_SOURCE_DIRECTORY/src/MobileApps/MyDriving/MyDriving.UITests/MyDriving.UITests.csproj
     appcenter test run uitest \
