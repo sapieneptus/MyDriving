@@ -44,11 +44,12 @@ namespace MyDriving.UITests
                 if (App.Query("Allow").Any())
                     App.Tap("Allow");
 
-				if (App.Query("Dismiss").Any())
-					App.Tap("Dismiss");
-
-                new LoginPage()
-                    .SkipAuthentication();
+                if (App.Query("Dismiss").Any())
+                {
+                    new LoginPage()
+                        .SkipAuthentication();
+                    App.Tap("Dismiss");
+                }
             }
         }
 
