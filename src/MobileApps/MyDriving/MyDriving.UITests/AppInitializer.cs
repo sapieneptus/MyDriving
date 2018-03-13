@@ -33,7 +33,7 @@ namespace MyDriving.UITests
 				string dir = fi.Directory.Parent.Parent.Parent.FullName;
 
 				// PathToAPK is a property or an instance variable in the test class
-				apkPath = Path.Combine(dir, "MyDriving.Android", "bin", "XTC", "com.microsoft.mydriving-Signed.apk");
+				apkPath = Path.Combine(dir, "MyDriving.Android", "bin", "Release", "com.microsoft.mydriving.apk");
 
 				app = ConfigureApp
 					.Android

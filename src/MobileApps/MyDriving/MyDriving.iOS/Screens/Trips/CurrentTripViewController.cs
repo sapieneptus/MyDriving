@@ -53,6 +53,7 @@ namespace MyDriving.iOS
 
 			if (CurrentTripViewModel != null)
 			{
+                await CurrentTripViewModel.Geolocator.StartListeningAsync(3, 100);
                 await CurrentTripViewModel.ExecuteStartTrackingTripCommandAsync().ContinueWith(async (task) =>
 				{
 					// If we don't have permission from the user, prompt a dialog requesting permission.
