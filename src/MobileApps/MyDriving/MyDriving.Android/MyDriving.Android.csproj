@@ -17,6 +17,8 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -34,6 +36,8 @@
     <AndroidSigningKeyAlias>Build2016</AndroidSigningKeyAlias>
     <AndroidSigningKeyPass>Build*1234</AndroidSigningKeyPass>
     <AssemblyName>MyDriving.Droid</AssemblyName>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <AndroidSupportedAbis>armeabi-v7a</AndroidSupportedAbis>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -41,11 +45,15 @@
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
     <ConsolePause>false</ConsolePause>
     <AndroidSupportedAbis>armeabi-v7a;x86</AndroidSupportedAbis>
     <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
     <AssemblyName>MyDriving.Droid</AssemblyName>
+    <AndroidKeyStore>True</AndroidKeyStore>
+    <AndroidSigningKeyStore>/Users/chrisf/Desktop/MyDriving.keystore</AndroidSigningKeyStore>
+    <AndroidSigningStorePass>calabus</AndroidSigningStorePass>
+    <AndroidSigningKeyAlias>MyDrivingKeystore</AndroidSigningKeyAlias>
+    <AndroidSigningKeyPass>calabus</AndroidSigningKeyPass>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'XTC|AnyCPU' ">
     <Optimize>false</Optimize>
@@ -57,7 +65,6 @@
     </AndroidFastDeploymentType>
     <AssemblyName>MyDriving.Android</AssemblyName>
     <JavaMaximumHeapSize>1G</JavaMaximumHeapSize>
-    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="HockeySDK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
