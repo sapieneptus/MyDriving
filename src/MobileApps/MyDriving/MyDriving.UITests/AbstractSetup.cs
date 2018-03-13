@@ -42,13 +42,13 @@ namespace MyDriving.UITests
             if (OniOS)
             {
                 if (App.Query("Allow").Any())
-                    App.Tap("Allow");
+                    App.Tap("Allow"); 
 
                 if (App.Query("Dismiss").Any())
                 {
+                    App.Tap("Dismiss");
                     new LoginPage()
                         .SkipAuthentication();
-                    App.Tap("Dismiss");
                 }
             }
         }
